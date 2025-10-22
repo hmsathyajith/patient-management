@@ -29,3 +29,6 @@ applying them to DTO fields, allowing different validation rules for each operat
 
 The implementation of validation group is by just adding a interface and mark the DTO's property with that interface. 
 That's it. 
+
+### Adding Swagger
+Added Swagger documentation tool to have web based API documentation. 
