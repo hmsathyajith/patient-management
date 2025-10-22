@@ -20,3 +20,12 @@ Both @Valid and @Validation triggers bean validation on the PatientRequestDTO
     -Comes from: org.springframework.validation.annotation.Validated
     -It’s a Spring-specific extension of @Valid.
     -It also triggers JSR 380 validation, but supports validation groups - that’s the key difference.
+
+### What is the usage of validation groups?
+If we use the same PatientRequestDTO for both create and update, @NotBlank fields will fail validation 
+during updates since only partial data (e.g., id and name) is sent. 
+Validation groups solve this by defining marker interfaces (e.g., Create and Update) and 
+applying them to DTO fields, allowing different validation rules for each operation.
+
+The implementation of validation group is by just adding a interface and mark the DTO's property with that interface. 
+That's it. 
