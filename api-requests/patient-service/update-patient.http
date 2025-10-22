@@ -1,0 +1,10 @@
+### Update and exsiting patient entity
+PUT localhost:4000/patients/3ba08353-1468-4015-aa84-43a1babe055a
+content-type:application/json
+
+{
+  "name":"Sathyajith Saliya edited",
+  "email":"hmsathyajith@gmail.com",
+  "dateOfBirth":"1996-11-27",
+  "address":"178/5/1/A, Utuwankanda Rd, Thalwathugoda"
+}
