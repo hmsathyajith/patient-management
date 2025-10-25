@@ -32,3 +32,8 @@ That's it.
 
 ### Adding Swagger
 Added Swagger documentation tool to have web based API documentation. 
+
+### 25/10/25
+Added docker to the project. 
+Migrated spring boot patient service to docker container called patient-service
+and setup Postgres database in another container called patient-service-db.
